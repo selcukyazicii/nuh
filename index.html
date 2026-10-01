@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nuh Yapı İnşaat | Geleceğin Yaşam Alanlarını İnşa Ediyoruz</title>
+  <meta name="description" content="Nuh Yapı İnşaat - Konut, ticari yapı, restorasyon ve mimari danışmanlık projeleriyle geleceğin yaşam alanlarını inşa ediyoruz.">
+
+  <!-- Google Fonts: Playfair Display (başlıklar) + Inter (gövde metni) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===================== HEADER / NAVBAR ===================== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__container">
+      <a href="#hero" class="navbar__logo">NUH YAPI <span>İNŞAAT</span></a>
+
+      <nav class="navbar__nav" id="navMenu">
+        <ul class="navbar__links">
+          <li><a href="#hero" class="nav-link">Anasayfa</a></li>
+          <li><a href="#hakkimizda" class="nav-link">Hakkımızda</a></li>
+          <li><a href="#projelerimiz" class="nav-link">Projelerimiz</a></li>
+          <li><a href="#hizmetlerimiz" class="nav-link">Hizmetlerimiz</a></li>
+          <li><a href="#iletisim" class="nav-link">İletişim</a></li>
+        </ul>
+      </nav>
+
+      <button class="navbar__toggle" id="navToggle" aria-label="Menüyü Aç/Kapat" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== HERO SECTION ===================== -->
+  <section class="hero" id="hero">
+    <!-- Placeholder şantiye/inşaat görseli - müşteri onayına göre değiştirilecek -->
+    <div class="hero__bg" style="background-image: url('https://resmim.net/cdn/2026/09/15/EP5Hwc.jpg');"></div>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content" data-animate="fade-up">
+      <p class="hero__eyebrow">Nuh Yapı İnşaat</p>
+      <h1 class="hero__title">1969'dan <br>Yarına<br></h1>
+      <p class="hero__subtitle">Nitelikli yaşam alanları geliştiriyor ve inşa ediyoruz.</p>
+      <a href="#projelerimiz" class="btn btn--primary">Projelerimizi Keşfedin</a>
+    </div>
+
+    <a href="#hakkimizda" class="hero__scroll-indicator" aria-label="Aşağı kaydır">
+      <span></span>
+      <p>Aşağı Kaydır</p>
+    </a>
+  </section>
+
+  <!-- ===================== HAKKIMIZDA ===================== -->
+  <section class="about" id="hakkimizda">
+    <div class="section-container about__grid">
+
+      <div class="about__image" data-animate="fade-right">
+        <img src="https://resmim.net/cdn/2026/09/15/EP5y12.jpg" alt="Nuh Yapı İnşaat şantiye ve mimari çalışma" loading="lazy">
+        <div class="about__image-frame"></div>
+      </div>
+
+      <div class="about__content" data-animate="fade-left">
+        <span class="section-label">Hakkımızda</span>
+        <h2 class="section-title">Üç Nesildir Aynı Titizlikle İnşa Ediyoruz</h2>
+        <p class="about__text">
+          Nuh Yapı İnşaat olarak, hayata geçirdiğimiz konut ve ticari projelerle yaşam alanlarını
+          yalnızca inşa etmiyor, geleceğe dair bir vizyon sunuyoruz. Mühendislik disiplinini mimari
+          estetikle buluşturarak sağlam, sürdürülebilir ve zamansız yapılar üretiyoruz.
+          <!-- Placeholder metin - müşteri içeriğiyle güncellenecek -->
+        </p>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat__number-wrap">
+              <span class="stat__number" data-target="25">0</span><span class="stat__suffix">+</span>
+            </div>
+            <p class="stat__label">Yıl Tecrübe</p>
+          </div>
+
+          <div class="stat">
+            <div class="stat__number-wrap">
+              <span class="stat__number" data-target="150">0</span><span class="stat__suffix">+</span>
+            </div>
+            <p class="stat__label">Tamamlanan Proje</p>
+          </div>
+
+          <div class="stat">
+            <div class="stat__number-wrap">
+              <span class="stat__number" data-target="5000">0</span><span class="stat__suffix">+</span>
+            </div>
+            <p class="stat__label">Mutlu Aile</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== HİZMETLERİMİZ ===================== -->
+  <section class="services" id="hizmetlerimiz">
+    <div class="section-container">
+
+      <div class="section-heading" data-animate="fade-up">
+        <span class="section-label">Hizmetlerimiz</span>
+        <h2 class="section-title">Hizmetlerimiz</h2>
+      </div>
+
+      <div class="services__grid">
+
+        <article class="service-card" data-animate="fade-up">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg>
+          </div>
+          <h3 class="service-card__title">Gayrimenkul Geliştirme</h3>
+          <p class="service-card__text">Konut ve ticari projeleri fikir aşamasından başlayarak; projelendirme, yapım, satış ve teslim süreçleriyle birlikte geliştiriyor ve hayata geçiriyoruz.</p>
+        </article>
+
+        <article class="service-card" data-animate="fade-up">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M9 8h1M14 8h1M9 12h1M14 12h1M9 16h1M14 16h1"/></svg>
+          </div>
+          <h3 class="service-card__title">İnşaat &amp; Taahhüt</h3>
+          <p class="service-card__text">Konut ve ticari yapılarda, uygulamadan anahtar teslimine kadar yapım süreçlerini kalite, bütçe ve iş programı doğrultusunda yönetiyoruz.</p>
+        </article>
+
+        <article class="service-card" data-animate="fade-up">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6l4 4"/><path d="M4.5 20.5 15 10a2 2 0 0 0 0-3l-1-1a2 2 0 0 0-3 0L1 16.5 4.5 20.5Z"/><path d="M17 3l4 4-2 2-4-4Z"/></svg>
+          </div>
+          <h3 class="service-card__title">Renovasyon &amp; İç Mekân Uygulamaları</h3>
+          <p class="service-card__text">Mevcut yapıların yenilenmesinden nitelikli iç mekân uygulamalarına kadar, yaşam ve kullanım alanlarını güncel ihtiyaçlara uygun şekilde yeniden ele alıyoruz.</p>
+        </article>
+
+        <article class="service-card" data-animate="fade-up">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="6" r="2.5"/><path d="M12 8.5V13M6 21l3.5-6.5L12 13l2.5 1.5L18 21"/></svg>
+          </div>
+          <h3 class="service-card__title">Kentsel Dönüşüm</h3>
+          <p class="service-card__text">Mevcut yapıların ve yapı alanlarının potansiyelini yeniden değerlendiriyor; güvenli, çağdaş ve uzun ömürlü projeler geliştirerek kentsel dönüşüm süreçlerini hayata geçiriyoruz.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DEVAM EDEN PROJEMİZ ===================== -->
+  <section class="ongoing" id="devam-eden-projemiz">
+    <div class="section-container">
+
+      <div class="section-heading" data-animate="fade-up">
+        <span class="section-label">Ormanyaka</span>
+        <h2 class="section-title">Devam Eden Projemiz</h2>
+        <p class="ongoing__subtitle">Ormanyaka bölgesindeki projemiz hızla ilerliyor.</p>
+      </div>
+
+      <div class="ongoing__gallery" data-animate="fade-up">
+
+        <button type="button" class="ongoing__item ongoing__item--hero js-gallery-btn" data-project="ormanyaka" data-index="0" aria-label="Ormanyaka projesi görsel 1 - galeriyi aç">
+          <span class="ongoing__badge">Yapım Aşamasında</span>
+          <img src="img/Ormanyaka/1.png" alt="Ormanyaka projesi genel görünüm" loading="lazy">
+          <span class="ongoing__item-overlay">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+            <span>Detay</span>
+          </span>
+        </button>
+
+        <div class="ongoing__subgrid">
+          <button type="button" class="ongoing__item js-gallery-btn" data-project="ormanyaka" data-index="1" aria-label="Ormanyaka projesi görsel 2 - galeriyi aç">
+            <img src="img/Ormanyaka/2.png" alt="Ormanyaka projesi görsel 2" loading="lazy">
+            <span class="ongoing__item-overlay">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+              <span>Detay</span>
+            </span>
+          </button>
+
+          <button type="button" class="ongoing__item js-gallery-btn" data-project="ormanyaka" data-index="2" aria-label="Ormanyaka projesi görsel 3 - galeriyi aç">
+            <img src="img/Ormanyaka/3.png" alt="Ormanyaka projesi görsel 3" loading="lazy">
+            <span class="ongoing__item-overlay">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+              <span>Detay</span>
+            </span>
+          </button>
+
+          <button type="button" class="ongoing__item js-gallery-btn" data-project="ormanyaka" data-index="3" aria-label="Ormanyaka projesi görsel 4 - galeriyi aç">
+            <img src="img/Ormanyaka/4.png" alt="Ormanyaka projesi görsel 4" loading="lazy">
+            <span class="ongoing__item-overlay">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+              <span>Detay</span>
+            </span>
+          </button>
+
+          <button type="button" class="ongoing__item js-gallery-btn" data-project="ormanyaka" data-index="4" aria-label="Ormanyaka projesi görsel 5 - galeriyi aç">
+            <img src="img/Ormanyaka/5.png" alt="Ormanyaka projesi görsel 5" loading="lazy">
+            <span class="ongoing__item-overlay">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+              <span>Detay</span>
+            </span>
+          </button>
+
+          <button type="button" class="ongoing__item js-gallery-btn" data-project="ormanyaka" data-index="5" aria-label="Ormanyaka projesi görsel 6 - galeriyi aç">
+            <img src="img/Ormanyaka/6.png" alt="Ormanyaka projesi görsel 6" loading="lazy">
+            <span class="ongoing__item-overlay">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+              <span>Detay</span>
+            </span>
+          </button>
+
+          <button type="button" class="ongoing__item js-gallery-btn" data-project="ormanyaka" data-index="6" aria-label="Ormanyaka projesi görsel 7 - galeriyi aç">
+            <img src="img/Ormanyaka/7.png" alt="Ormanyaka projesi görsel 7" loading="lazy">
+            <span class="ongoing__item-overlay">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+              <span>Detay</span>
+            </span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== PROJELERİMİZ ===================== -->
+  <section class="projects" id="projelerimiz">
+    <div class="section-container">
+
+      <div class="section-heading" data-animate="fade-up">
+        <span class="section-label">Projelerimiz</span>
+        <h2 class="section-title">Şehrin Yeni Silüetleri</h2>
+      </div>
+
+      <div class="projects__grid">
+
+        <article class="project-card" data-project="atayurt" data-animate="fade-up">
+          <div class="project-card__image">
+            <img src="img/Atayurt%20Sitesi(2012)/CPUH9530.JPG" alt="Atayurt Sitesi projesi" loading="lazy">
+          </div>
+          <div class="project-card__overlay">
+            <button type="button" class="btn btn--outline-light js-gallery-btn" data-project="atayurt">Detayları Gör</button>
+          </div>
+          <div class="project-card__info">
+            <h3>Atayurt Sitesi</h3>
+            <p>Merkez Mahallesi &middot; 2+1 / 3+1 Daireler &middot; Teslim: 2026</p>
+          </div>
+        </article>
+
+        <article class="project-card" data-project="begonya" data-animate="fade-up">
+          <div class="project-card__image">
+            <img src="img/Begonya%20Villaları(2001)/IMG_0253.JPG" alt="Begonya Villaları projesi" loading="lazy">
+          </div>
+          <div class="project-card__overlay">
+            <button type="button" class="btn btn--outline-light js-gallery-btn" data-project="begonya">Detayları Gör</button>
+          </div>
+          <div class="project-card__info">
+            <h3>Begonya Villaları</h3>
+            <p>Yeşiltepe Mahallesi &middot; 1+1 / 2+1 Daireler &middot; Teslim: 2027</p>
+          </div>
+        </article>
+
+        <article class="project-card" data-project="buket" data-animate="fade-up">
+          <div class="project-card__image">
+            <img src="img/Buket%20Apartmanı(1983)/IMG_0299.JPG" alt="Buket Apartmanı projesi" loading="lazy">
+          </div>
+          <div class="project-card__overlay">
+            <button type="button" class="btn btn--outline-light js-gallery-btn" data-project="buket">Detayları Gör</button>
+          </div>
+          <div class="project-card__info">
+            <h3>Buket Apartmanı</h3>
+            <p>Sahil Mahallesi &middot; 3+1 / 4+1 Daireler &middot; Teslim: 2025</p>
+          </div>
+        </article>
+
+      </div>
+      <br>
+       <div class="projects__grid">
+
+        <article class="project-card" data-project="aliaksakal" data-animate="fade-up">
+          <div class="project-card__image">
+            <img src="img/AliAksakalApt/IMG_0311.JPG" alt="Ali Aksakal Apartmanı projesi" loading="lazy">
+          </div>
+          <div class="project-card__overlay">
+            <button type="button" class="btn btn--outline-light js-gallery-btn" data-project="aliaksakal">Detayları Gör</button>
+          </div>
+          <div class="project-card__info">
+            <h3>Ali Aksakal Apartmanı</h3>
+            <p>Merkez Mahallesi &middot; 2+1 / 3+1 Daireler &middot; Teslim: 2026</p>
+          </div>
+        </article>
+
+        <article class="project-card" data-project="asici" data-animate="fade-up">
+          <div class="project-card__image">
+            <img src="img/Aşıcı%20Apartmanı(2009)/WhatsApp%20Image%202019-08-27%20at%2019.25.11.jpeg" alt="Aşıcı Apartmanı projesi" loading="lazy">
+          </div>
+          <div class="project-card__overlay">
+            <button type="button" class="btn btn--outline-light js-gallery-btn" data-project="asici">Detayları Gör</button>
+          </div>
+          <div class="project-card__info">
+            <h3>Aşıcı Apartmanı</h3>
+            <p>Yeşiltepe Mahallesi &middot; 1+1 / 2+1 Daireler &middot; Teslim: 2027</p>
+          </div>
+        </article>
+
+        <article class="project-card" data-project="burak" data-animate="fade-up">
+          <div class="project-card__image">
+            <img src="img/Burak%20Apartmanı(1982)/IMG_0279.JPG" alt="Burak Apartmanı projesi" loading="lazy">
+          </div>
+          <div class="project-card__overlay">
+            <button type="button" class="btn btn--outline-light js-gallery-btn" data-project="burak">Detayları Gör</button>
+          </div>
+          <div class="project-card__info">
+            <h3>Burak Apartmanı</h3>
+            <p>Sahil Mahallesi &middot; 3+1 / 4+1 Daireler &middot; Teslim: 2025</p>
+          </div>
+        </article>
+
+      </div>
+      <br>
+       <div class="projects__grid">
+
+        <article class="project-card" data-project="esentepe" data-animate="fade-up">
+          <div class="project-card__image">
+            <img src="img/Esentepe%20Evleri(2019)/AKYO1984.JPG" alt="Esentepe Evleri projesi" loading="lazy">
+          </div>
+          <div class="project-card__overlay">
+            <button type="button" class="btn btn--outline-light js-gallery-btn" data-project="esentepe">Detayları Gör</button>
+          </div>
+          <div class="project-card__info">
+            <h3>Esentepe Evleri</h3>
+            <p>Merkez Mahallesi &middot; 2+1 / 3+1 Daireler &middot; Teslim: 2026</p>
+          </div>
+        </article>
+
+        <article class="project-card" data-project="gunes" data-animate="fade-up">
+          <div class="project-card__image">
+            <img src="img/Güneş%20Sitesi/WhatsApp%20Image%202019-08-27%20at%2020.08.57%20(1).jpeg" alt="Güneş Sitesi projesi" loading="lazy">
+          </div>
+          <div class="project-card__overlay">
+            <button type="button" class="btn btn--outline-light js-gallery-btn" data-project="gunes">Detayları Gör</button>
+          </div>
+          <div class="project-card__info">
+            <h3>Güneş Sitesi</h3>
+            <p>Yeşiltepe Mahallesi &middot; 1+1 / 2+1 Daireler &middot; Teslim: 2027</p>
+          </div>
+        </article>
+
+        <article class="project-card" data-project="nuhoglu1992" data-animate="fade-up">
+          <div class="project-card__image">
+            <img src="img/Nuhoğlu%20Apartmanı(1992)/IMG_0273.JPG" alt="Nuhoğlu Apartmanı (1992) projesi" loading="lazy">
+          </div>
+          <div class="project-card__overlay">
+            <button type="button" class="btn btn--outline-light js-gallery-btn" data-project="nuhoglu1992">Detayları Gör</button>
+          </div>
+          <div class="project-card__info">
+            <h3>Nuhoğlu Apartmanı (1992)</h3>
+            <p>Sahil Mahallesi &middot; 3+1 / 4+1 Daireler &middot; Teslim: 2025</p>
+          </div>
+        </article>
+
+      </div>
+       <br>
+       <div class="projects__grid">
+
+        <article class="project-card" data-project="safran" data-animate="fade-up">
+          <div class="project-card__image">
+            <img src="img/Safran%20Villaları(2011)/WhatsApp%20Image%202019-08-27%20at%2019.26.43%20(1).jpeg" alt="Safran Villaları projesi" loading="lazy">
+          </div>
+          <div class="project-card__overlay">
+            <button type="button" class="btn btn--outline-light js-gallery-btn" data-project="safran">Detayları Gör</button>
+          </div>
+          <div class="project-card__info">
+            <h3>Safran Villaları</h3>
+            <p>Merkez Mahallesi &middot; 2+1 / 3+1 Daireler &middot; Teslim: 2026</p>
+          </div>
+        </article>
+
+        <article class="project-card" data-project="yagmur" data-animate="fade-up">
+          <div class="project-card__image">
+            <img src="img/Yağmur%20Sitesi(2011)/WhatsApp%20Image%202019-08-27%20at%2020.09.05.jpeg" alt="Yağmur Sitesi projesi" loading="lazy">
+          </div>
+          <div class="project-card__overlay">
+            <button type="button" class="btn btn--outline-light js-gallery-btn" data-project="yagmur">Detayları Gör</button>
+          </div>
+          <div class="project-card__info">
+            <h3>Yağmur Sitesi</h3>
+            <p>Yeşiltepe Mahallesi &middot; 1+1 / 2+1 Daireler &middot; Teslim: 2027</p>
+          </div>
+        </article>
+
+        <article class="project-card" data-project="nuhoglu2006" data-animate="fade-up">
+          <div class="project-card__image">
+            <img src="img/Nuhoğlu%20Apartmanı%20(2006)/IMG_0304.JPG" alt="Nuhoğlu Apartmanı (2006) projesi" loading="lazy">
+          </div>
+          <div class="project-card__overlay">
+            <button type="button" class="btn btn--outline-light js-gallery-btn" data-project="nuhoglu2006">Detayları Gör</button>
+          </div>
+          <div class="project-card__info">
+            <h3>Nuhoğlu Apartmanı (2006)</h3>
+            <p>Yeşiltepe Mahallesi &middot; 1+1 / 2+1 Daireler &middot; Teslim: 2027</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NEDEN BİZ ===================== -->
+  <section class="why-us">
+    <div class="section-container">
+      <div class="why-us__grid">
+
+        <div class="why-us__item" data-animate="fade-up">
+          <div class="why-us__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 8-7 9-4-1-7-4.5-7-9V6l7-3Z"/><path d="m9 12 2 2 4-4"/></svg>
+          </div>
+          <h3>Kaliteli Malzeme</h3>
+          <p>Her projede uzun ömürlü ve sertifikalı malzemeler kullanıyoruz.</p>
+        </div>
+
+        <div class="why-us__item" data-animate="fade-up">
+          <div class="why-us__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+          </div>
+          <h3>Zamanında Teslim</h3>
+          <p>Planlanan takvime sadık kalarak projelerimizi eksiksiz teslim ediyoruz.</p>
+        </div>
+
+        <div class="why-us__item" data-animate="fade-up">
+          <div class="why-us__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><circle cx="17.5" cy="9" r="2.5"/><path d="M15.8 13.5a5.5 5.5 0 0 1 5.7 5.5"/></svg>
+          </div>
+          <h3>Uzman Ekip</h3>
+          <p>Alanında deneyimli mühendis ve mimarlardan oluşan güçlü bir kadromuz var.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== İLETİŞİM ===================== -->
+  <section class="contact" id="iletisim">
+    <div class="section-container contact__grid">
+
+      <!-- <div class="contact__form-wrap" data-animate="fade-right"> -->
+        <!-- <span class="section-label">İletişim</span> -->
+        <!-- <h2 class="section-title">Projeniz İçin Bize Ulaşın</h2> -->
+<!-- 
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Ad Soyad</label>
+            <input type="text" id="name" name="name" placeholder="Adınız Soyadınız" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Telefon</label>
+            <input type="tel" id="phone" name="phone" placeholder="05XX XXX XX XX" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">E-posta</label>
+            <input type="email" id="email" name="email" placeholder="ornek@eposta.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Mesajınız</label>
+            <textarea id="message" name="message" rows="5" placeholder="Mesajınızı yazın..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn--primary">Mesaj Gönder</button>
+          <p class="form-status" id="formStatus" role="status"></p>
+        </form> -->
+      <!-- </div> -->
+      <div class="contact__info-wrap" data-animate="fade-left">
+<h1>İletişim</h1>
+
+        <div class="contact-info">
+          <div class="contact-info__item">
+            <h4>Adres</h4>
+            <p>Örnek Mahallesi, Örnek Caddesi No:1, Kat:3<br>İstanbul / Türkiye</p>
+          </div>
+
+          <div class="contact-info__item">
+            <h4>Telefon</h4>
+            <p><a href="tel:+902121234567">+90 212 123 45 67</a></p>
+          </div>
+
+          <div class="contact-info__item">
+            <h4>E-posta</h4>
+            <p><a href="mailto:info@nuhyapi.com">info@nuhyapi.com</a></p>
+          </div>
+        </div>
+
+        <!-- Placeholder Google Maps embed - müşteri adresine göre güncellenecek -->
+        <div class="map-wrap">
+          <iframe
+            src="https://maps.google.com/maps?q=istanbul&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            title="Nuh Yapı İnşaat Konum Haritası"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="section-container footer__grid">
+
+      <div class="footer__brand">
+        <a href="#hero" class="footer__logo">NUH YAPI <span>İNŞAAT</span></a>
+        <p>Güvenilir mühendislik ve zarif mimariyle geleceğin yaşam alanlarını inşa ediyoruz.</p>
+
+        <div class="footer__socials">
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M15 8.5h2V5h-2c-2 0-3.5 1.5-3.5 3.5V11H9v3h2.5v6h3v-6H17l.5-3h-3V8.8c0-.5.2-.3.5-.3Z"/></svg>
+          </a>
+          <a href="#" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M7 10v7M7 7v.01M11 17v-4.5c0-1.5 1-2.5 2.5-2.5S16 11 16 12.5V17M11 10.5h.01"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <h4>Hızlı Linkler</h4>
+        <ul>
+          <li><a href="#hero">Anasayfa</a></li>
+          <li><a href="#hakkimizda">Hakkımızda</a></li>
+          <li><a href="#projelerimiz">Projelerimiz</a></li>
+          <li><a href="#hizmetlerimiz">Hizmetlerimiz</a></li>
+          <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__contact">
+        <h4>İletişim</h4>
+        <p><a href="tel:+902121234567">+90 212 123 45 67</a></p>
+        <p><a href="mailto:info@nuhyapi.com">info@nuhyapi.com</a></p>
+        <p>Örnek Mahallesi, Örnek Caddesi No:1, İstanbul</p>
+      </div>
+
+    </div>
+
+    <div class="footer__bottom">
+      <p>&copy; <span id="currentYear"></span> Nuh Yapı İnşaat. Tüm hakları saklıdır.</p>
+    </div>
+  </footer>
+
+  <!-- ===================== PROJE GALERİSİ (MODAL) ===================== -->
+  <div class="gallery-modal" id="galleryModal" aria-hidden="true">
+    <div class="gallery-modal__backdrop" data-gallery-close></div>
+    <div class="gallery-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="galleryModalTitle">
+      <button type="button" class="gallery-modal__close" data-gallery-close aria-label="Kapat">&times;</button>
+
+      <div class="gallery-modal__header">
+        <h3 class="gallery-modal__title" id="galleryModalTitle"></h3>
+        <p class="gallery-modal__counter" id="galleryCounter"></p>
+      </div>
+
+      <div class="gallery-modal__viewer">
+        <button type="button" class="gallery-modal__nav gallery-modal__nav--prev" data-gallery-prev aria-label="Önceki görsel">&#10094;</button>
+        <img class="gallery-modal__main-img" id="galleryMainImg" src="" alt="">
+        <button type="button" class="gallery-modal__nav gallery-modal__nav--next" data-gallery-next aria-label="Sonraki görsel">&#10095;</button>
+      </div>
+
+      <div class="gallery-modal__thumbs" id="galleryThumbs"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
