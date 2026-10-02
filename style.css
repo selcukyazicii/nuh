@@ -179,14 +179,14 @@ h1, h2, h3, h4 {
   width: 100%;
   height: var(--navbar-height);
   z-index: 1000;
-  background-color: transparent;
-  transition: background-color var(--transition-fast), box-shadow var(--transition-fast);
-}
-
-.navbar.is-scrolled {
   background-color: rgba(247, 243, 236, 0.95);
   backdrop-filter: blur(8px);
   box-shadow: 0 2px 24px rgba(0, 0, 0, 0.06);
+  transition: box-shadow var(--transition-fast);
+}
+
+.navbar.is-scrolled {
+  box-shadow: 0 4px 28px rgba(0, 0, 0, 0.1);
 }
 
 .navbar__container {
@@ -200,20 +200,20 @@ h1, h2, h3, h4 {
 }
 
 .navbar__logo {
-  font-family: var(--font-heading);
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  color: var(--color-white);
-  transition: color var(--transition-fast);
+  display: flex;
+  align-items: center;
 }
 
-.navbar__logo span {
-  color: var(--color-accent);
+.navbar__logo-img {
+  display: block;
+  height: 54px;
+  width: auto;
+  filter: drop-shadow(0 1px 3px rgba(0, 0, 0, 0.1));
+  transition: height var(--transition-fast);
 }
 
-.navbar.is-scrolled .navbar__logo {
-  color: var(--color-dark);
+.navbar.is-scrolled .navbar__logo-img {
+  height: 46px;
 }
 
 .navbar__links {
@@ -225,7 +225,7 @@ h1, h2, h3, h4 {
   position: relative;
   font-size: 0.92rem;
   font-weight: 500;
-  color: var(--color-white);
+  color: var(--color-text);
   padding-bottom: 6px;
   transition: color var(--transition-fast);
 }
@@ -245,10 +245,6 @@ h1, h2, h3, h4 {
   width: 100%;
 }
 
-.navbar.is-scrolled .nav-link {
-  color: var(--color-text);
-}
-
 /* Hamburger buton (mobil) */
 .navbar__toggle {
   display: none;
@@ -265,12 +261,8 @@ h1, h2, h3, h4 {
   display: block;
   width: 26px;
   height: 2px;
-  background-color: var(--color-white);
-  transition: all var(--transition-fast);
-}
-
-.navbar.is-scrolled .navbar__toggle span {
   background-color: var(--color-dark);
+  transition: all var(--transition-fast);
 }
 
 .navbar__toggle.is-active span:nth-child(1) {
@@ -394,7 +386,7 @@ h1, h2, h3, h4 {
 
 .about__grid {
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns: 1.1fr 0.9fr;
   gap: 90px;
   align-items: center;
 }
@@ -413,7 +405,7 @@ h1, h2, h3, h4 {
 .about__image-frame {
   position: absolute;
   top: 24px;
-  left: -24px;
+  right: -24px;
   width: 100%;
   height: 100%;
   border: 2px solid var(--color-accent);
@@ -424,13 +416,16 @@ h1, h2, h3, h4 {
   color: var(--color-text-muted);
   font-size: 1.03rem;
   max-width: 540px;
-  margin-bottom: 56px;
 }
 
 .stats {
   display: flex;
-  gap: 56px;
+  justify-content: space-between;
   flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 70px;
+  padding-top: 40px;
+  border-top: 1px solid var(--color-cream-dark);
 }
 
 .stat__number-wrap {
@@ -449,6 +444,11 @@ h1, h2, h3, h4 {
   font-size: 1.6rem;
   font-weight: 700;
   color: var(--color-accent);
+}
+
+.stat__suffix--dark {
+  color: var(--color-dark);
+  margin-left: 6px;
 }
 
 .stat__label {
@@ -609,14 +609,117 @@ h1, h2, h3, h4 {
 
 /* ---------- 9. PROJELERİMİZ ---------- */
 .projects {
-  padding: var(--section-padding) 0;
   background-color: var(--color-cream);
+}
+
+.projects__featured {
+  position: relative;
+  padding: var(--section-padding) 0;
+  background-image: linear-gradient(180deg, rgba(12, 11, 9, 0.8), rgba(12, 11, 9, 0.88)), url('img/Kapak/giristekiKapak.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.projects__featured-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 56px;
+}
+
+.section-label--light {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.section-title--light {
+  color: var(--color-white);
+  margin-bottom: 0;
+}
+
+.projects__featured-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.featured-card {
+  display: block;
+  width: 100%;
+  text-align: left;
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.featured-card__image {
+  height: 320px;
+  overflow: hidden;
+}
+
+.featured-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.featured-card:hover .featured-card__image img {
+  transform: scale(1.08);
+}
+
+.featured-card__info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 22px 26px;
+  background-color: var(--color-white);
+}
+
+.featured-card__info h3 {
+  font-size: 1.15rem;
+  color: var(--color-dark);
+  margin-bottom: 4px;
+}
+
+.featured-card__info p {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.featured-card__arrow {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1.5px solid var(--color-cream-dark);
+  color: var(--color-dark);
+  transition: all var(--transition-fast);
+}
+
+.featured-card__arrow svg {
+  width: 18px;
+  height: 18px;
+}
+
+.featured-card:hover .featured-card__arrow {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-white);
 }
 
 .projects__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 36px;
+}
+
+.projects__list {
+  padding: var(--section-padding) 0;
 }
 
 .project-card {
@@ -829,16 +932,18 @@ h1, h2, h3, h4 {
 }
 
 .footer__logo {
-  display: inline-block;
-  font-family: var(--font-heading);
-  font-size: 1.3rem;
-  font-weight: 700;
-  color: var(--color-white);
+  display: inline-flex;
+  align-items: center;
+  background-color: var(--color-white);
+  padding: 10px 20px;
+  border-radius: 6px;
   margin-bottom: 18px;
 }
 
-.footer__logo span {
-  color: var(--color-accent);
+.footer__logo-img {
+  display: block;
+  height: 42px;
+  width: auto;
 }
 
 .footer__brand p {
@@ -917,6 +1022,43 @@ h1, h2, h3, h4 {
   font-size: 0.85rem;
 }
 
+/* her zaman görünür kalan sabit WhatsApp butonu */
+.whatsapp-float {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  width: 58px;
+  height: 58px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #25d366;
+  color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  z-index: 999;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.whatsapp-float:hover {
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 600px) {
+  .whatsapp-float {
+    width: 50px;
+    height: 50px;
+    right: 16px;
+    bottom: 16px;
+  }
+
+  .whatsapp-float svg {
+    width: 25px;
+    height: 25px;
+  }
+}
+
 /* =========================================================
    13. RESPONSIVE - TABLET (<= 1024px)
    ========================================================= */
@@ -939,6 +1081,10 @@ h1, h2, h3, h4 {
   }
 
   .projects__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .projects__featured-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1021,7 +1167,7 @@ h1, h2, h3, h4 {
   }
 
   .about__image-frame {
-    left: -14px;
+    right: -14px;
     top: 14px;
   }
 
@@ -1039,6 +1185,14 @@ h1, h2, h3, h4 {
 
   .projects__grid {
     grid-template-columns: 1fr;
+  }
+
+  .projects__featured-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .projects__featured-header {
+    align-items: flex-start;
   }
 
   .ongoing__gallery {

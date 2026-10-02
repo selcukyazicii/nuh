@@ -200,6 +200,11 @@ document.addEventListener('DOMContentLoaded', () => {
         'WhatsApp Image 2019-08-27 at 19.26.41.jpeg',
       ],
     },
+    kaptaniderya: {
+      title: 'Kaptanıderya',
+      folder: 'img/Kaptaniderya',
+      images: ['kaptaniderya.jpeg'],
+    },
     gunes: {
       title: 'Güneş Sitesi',
       folder: 'img/Güneş Sitesi',
@@ -229,6 +234,11 @@ document.addEventListener('DOMContentLoaded', () => {
       title: 'Nuhoğlu Apartmanı (2006)',
       folder: 'img/Nuhoğlu Apartmanı (2006)',
       images: imgRange(304, 308),
+    },
+    ormanyakavillalari: {
+      title: 'Ormanyaka Villaları',
+      folder: 'img/Ormanyaka2',
+      images: Array.from({ length: 14 }, (_, i) => `${i + 1}.jpeg`),
     },
     safran: {
       title: 'Safran Villaları',
